@@ -14,6 +14,7 @@ function git_sparse_clone() {
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
 
 git clone -b 18.06 --single-branch --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone -b 18.06 --single-branch --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
